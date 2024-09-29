@@ -1,0 +1,359 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Header banner style */
+.header {
+    height: 94px;
+    background-color: #B18FCF; 
+    position: relative;
+    color: white;
+}
+
+
+/* Container for title and search bar */
+.title-search {
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    position: relative;     
+}
+
+/* Center the title */
+.title-search h1 {
+    margin: 0 20px; 
+    font-size: 64px; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Increased shadow */
+    font-family: 'Kalnia', sans-serif; 
+    font-weight: bold; /* Thicker text */
+    letter-spacing: 2px; /* Add letter spacing */
+}
+
+/* Style for the search bar */
+.search-bar {
+    position: absolute;  
+    right: 100px;         
+}
+
+.search-bar input {
+    padding: 5px 15px; 
+    font-size: 16px; 
+    border-radius: 20px; 
+    border: 1px solid #ccc; 
+    
+}
+
+/* navbar spaced */
+.navbar {
+    height: 40px;
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 100px; 
+}
+
+/* Styling for navbar links */
+.navbar a {
+    text-decoration: none; 
+    color: #551470; 
+    padding: 0 15px; 
+    font-weight: bold; 
+    font-size: 15px;
+    font-family: 'Kalnia', sans-serif;
+    line-height: 40px; 
+    transition: background-color 0.3s ease;
+}
+
+/* Remove any margin */
+.navbar a {
+    margin: 0; 
+}
+/* Hover effect */
+.navbar a:hover {
+    color: #978897; /* Change this to your desired hover font color */
+    background-color: transparent; /* Explicitly set background to transparent */
+}
+
+/***************************************************************************/
+**/
+/* Dropdown container */
+.dropdown {
+    position: relative; 
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px; 
+    display: none; 
+    position: absolute;
+    min-width: 500px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+
+    background: linear-gradient(135deg, #6b576b, #978897); /* Gradient colors */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Optional: spacing around the tab */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: grid; 
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+    color: white; 
+    padding: 10px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none; 
+    display: block; 
+    text-align: justify; 
+}
+
+/* Change background color on hover */
+.dropdown-content a:hover {
+    background-color: transparent; 
+}
+
+/* Adjusting the navbar links on hover */
+.navbar a:hover {
+    background-color: transparent; 
+}
+
+/***************************************************************************/
+/* Content area styling */
+.content {
+    background-image: url('https://wallpapercave.com/wp/wp7952844.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 130px; 
+    padding-top: 90px;
+    text-align: justify; 
+    background-color: #B18FCF; 
+    color: white; 
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    font-family: 'League Spartan', sans-serif; 
+}
+
+.content a {
+    color: white; /* Change the color to match your theme */
+    text-decoration: none; /* Remove underline */
+}
+
+.content a:hover {
+    text-decoration: underline; /* Add underline on hover for effect */
+}
+/***************************************************************************/
+/* Seperator styling */
+.separator {
+    width: 100%; 
+    height: 2px; 
+    background-color: white; 
+    border-radius: 20px; 
+    margin: 20px auto; 
+    position: relative; 
+}
+
+/* Adding circles at both ends */
+.separator::before,
+.separator::after {
+    content: '';
+    position: absolute;
+    width: 12px; 
+    height: 12px; 
+    background-color: white; 
+    border-radius: 50%; 
+    top: -5px; 
+}
+
+.separator::before {
+    left: -6px; 
+}
+
+.separator::after {
+    right: -6px; 
+}
+/***************************************************************************/
+/* Table styling */
+table {
+    padding-top: 50px;
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
+    margin-top: 20px; 
+    background-color: transparent; 
+    color: white; 
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Header row styling */
+th {
+    background-color: #837583; 
+    padding: 10px;
+    border: none; 
+}
+
+/* This section is for sample content only, to be replaced with JS Script for fetching data once available */
+
+thead th:first-child {
+    border-radius: 10px 0 0 10px; 
+}
+
+thead th:last-child {
+    border-radius: 0 10px 10px 0; 
+}
+
+/* Table row styling */
+tr {
+    background-color: transparent; 
+}
+
+/* Apply background and rounded corners to each table cell */
+td {
+    background-color: #978897; 
+    padding: 10px; 
+    border: none; 
+}
+
+/* Adjust padding for song title cells */
+td:nth-child(3) { 
+    padding-left: 0px; 
+}
+/* Adjust padding for song title cells */
+td:nth-child(2) { 
+    padding-right: 0px; 
+}
+
+/* Apply rounded corners to the first and last cells of each row */
+tbody tr td:first-child {
+    border-radius: 10px 0 0 10px; 
+}
+
+tbody tr td:last-child {
+    border-radius: 0 10px 10px 0; 
+}
+
+.thumbnail {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+/***************************************************************************/
+
+/* Style for lyrics specifically */
+.song {
+    background-image: url('https://wallpapercave.com/wp/wp7952844.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    margin: 0; 
+    padding: 0;
+
+}
+/* Song container */
+.song-container {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    gap: 15px; /* Space between thumbnail and text */
+    padding-top: 100px;
+    padding-left: 255px;
+
+}
+
+/* Thumbnail size */
+.thumbnail {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+/* Song details (title and singer) */
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-details .title {
+    font-size: 40px; /* Adjust font size for title */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 900;
+    color: #551470; 
+    margin: 0;
+}
+
+.song-details .singer {
+    font-size: 25px; /* Adjust font size for singer name */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 400; /* Apply Light weight */
+    color: white; 
+    margin: 0;
+}
+.lyrics {
+    color: #551470; /* White color for lyrics */
+    font-family: 'Inter', sans-serif; /* Inter font */
+    font-size: 20px; /* You can adjust the font size as needed */
+    text-align: justify; /* Justify the text */
+    white-space: pre-wrap;
+    padding-left: 260px;
+    right: 20px;
+}
+
+.translation {
+    color: #551470; /* White color for lyrics */
+    font-family: 'Inter', sans-serif; /* Inter font */
+    font-weight: bold;
+    font-size: 20px; /* You can adjust the font size as needed */
+    text-align: justify; /* Justify the text */
+    white-space: pre-wrap;
+    padding-left: 110px;
+    right: 20px;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: row;   /* Align items in a row */
+    justify-content: space-between;   /* Add space between video and lyrics */
+    align-items: flex-start;          /* Align video and lyrics at the top */
+    gap: 17px;                        /* Add gap between video and lyrics */
+    margin: 20px 0;
+}
+
+.video-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns video to the right */
+    margin: 20px; /* Add margin as needed */
+    margin-right: 260px;
+    border: 5px solid white; /* Change the border color and width as desired */
+    border-radius: 5px; /* Adjust this value for more or less rounding */
+    overflow: hidden; /* This ensures the border follows the rounded shape */
+}
+
+/***************************************************************************/
+.Info {
+    color: #651b85; /* Text color */
+    font-family: 'Inter', sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+    text-align: justify; /* Justify text */
+    white-space: pre-wrap; /* Maintain whitespace */
+    margin: 20px 0; /* Optional: spacing around the text */
+    box-shadow: none; /* Remove any shadow effect */
+}
