@@ -13,9 +13,9 @@
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <div class="title-search">
+            <div class="header__title-search">
                 <h1>LYRICA</h1> <!-- Main title of the website -->
-                <div class="search-bar">
+                <div class="header__search-bar">
                     <form action="search.html" method="GET"> <!-- Search form -->
                         <input type="text" name="query" placeholder="Search"> <!-- Search input field -->
                     </form>
@@ -25,43 +25,58 @@
 
         <!-- Navigation Bar -->
         <div class="navbar">
-            <a href="index.html">HOME</a> <!-- Link to home page -->
-            <div class="dropdown">
-                <a href="#Genre" class="dropdown-toggle">GENRE</a> <!-- Dropdown for genres -->
-                <div class="dropdown-content">
-                    <a href="#Jazz">Jazz</a>
-                    <a href="#Reggae">Reggae</a>
-                    <a href="#Pop Music">Pop Music</a>
-                    <a href="#Rock">Rock</a>
-                    <a href="#Folk Music">Folk Music</a>
-                    <a href="#Classical Music">Classical Music</a>
-                    <a href="#Heavy Metal">Heavy Metal</a>
-                    <a href="#Country Music">Country Music</a>
-                    <a href="#Funk">Funk</a>
-                    <a href="#K-Pop">K-Pop</a>
-                    <a href="#Grunge">Grunge</a>
-                    <a href="#Hip hop">Hip Hop</a>
-                    <a href="#Indie Rock">Indie Rock</a>
-                    <a href="#Hardcore Punk">Hardcore Punk</a>
-                    <a href="#Dance Music">Dance Music</a>
-                    <a href="#R&B">R&B</a>
-                    <a href="#Emo">Emo</a>
-                    <a href="#Christian Music">Christian Music</a>
+            <a href="index.html" class="navbar__link">HOME</a> <!-- Link to home page -->
+            <div class="navbar__dropdown">
+                <a href="#Genre" class="navbar__link navbar__link--dropdown">GENRE</a> <!-- Dropdown for genres -->
+                <div class="navbar__dropdown--content">
+                    <a href="GENREJPop.html" class="navbar__link">J-Pop</a>
+                    <a href="GENREPopRock.html"class="navbar__link">Pop Rock</a>
+                    <a href="GENREPopMusic.html"class="navbar__link">Pop Music</a>
+                    <a href="GENREAlternative.html"class="navbar__link">Alternative</a>
+                    <a href="GENREPostHardcore.html"class="navbar__link">PostHardcore</a>
+                    <a href="GENRER&B.html"class="navbar__link">R&B</a>
+                    <a href="GENRESoul.html"class="navbar__link">Soul</a>
+                    <a href="GENREContemporary.html"class="navbar__link">Contemporary</a>
+                    <a href="GENREGospel.html"class="navbar__link">Gospel</a>
                 </div>
             </div>
-            <a href="#Video">VIDEO</a> <!-- Link to video section -->
-            <a href="about.html">ABOUT</a> <!-- Link to about page -->
+            <a href="about.html" class="navbar__link">ABOUT</a> <!-- Link to about page -->
         </div>
 
         <!-- Main Content Area -->
         <div class="content">
             <h1>ABOUT</h1> <!-- Title of the about section -->
             <div class="separator"></div> <!-- Separator line -->
-            <div class="Info">
+            <div class="content__info">
                 <p>Lyrica is your go-to platform for discovering lyrics from various genres, helping you connect with the music you love.</p> <!-- Description of Lyrica -->
                 <p>Our mission is to provide an easy-to-navigate site where you can find lyrics, explore new music, and enjoy a community of fellow music lovers.</p> <!-- Mission statement -->
             </div>
         </div>
     </div>
 </body>
+<footer class="footer">
+    <div class="footer__container">
+    <div class="footer__section footer__section--left">
+        <h3 class="footer__heading footer__heading--brand">LYRICA</h3>
+        <p class="footer__text">&copy; 2024 Lyrica. All Rights Reserved.</p>
+    </div>
+    
+    <div class="footer__section footer__section--center">
+        <ul class="footer__nav">
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact</a></li>
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Terms of Service</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer__section footer__section--right">
+        <ul class="footer__social">
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="Facebook"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://clipart-library.com/new_gallery/58-580603_twitter-icon-white-transparent-transparent-background-twitter-logo.png" alt="Twitter"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://img.icons8.com/win8/200/FFFFFF/instagram-new.png" alt="Instagram"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png" alt="LinkedIn"></a></li>
+        </ul>
+    </div>
+    </div>
+</footer>
 </html>

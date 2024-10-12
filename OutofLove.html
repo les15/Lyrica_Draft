@@ -13,97 +13,118 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header">
-            <div class="title-search">
-                <h1>LYRICA</h1>
-                <div class="search-bar">
-                    <form action="search.html" method="GET">
-                        <input type="text" name="query" placeholder="Search">
+            <div class="header__title-search">
+                <h1>LYRICA</h1> <!-- Main title of the website -->
+                <div class="header__search-bar">
+                    <form action="search.html" method="GET"> <!-- Search form -->
+                        <input type="text" name="query" placeholder="Search"> <!-- Search input field -->
                     </form>
                 </div>
             </div>
         </div>
+
+        <!-- Navigation Bar -->
         <div class="navbar">
-            <a href="index.html">HOME</a>
-            <div class="dropdown">
-                <a href="#Genre" class="dropdown-toggle">GENRE</a>
-                <div class="dropdown-content">
-                    <a href="#Jazz">Jazz</a>
-                    <a href="#Reggae">Reggae</a>
-                    <a href="#Pop Music">Pop Music</a>
-                    <a href="#Rock">Rock</a>
-                    <a href="#Folk Music">Folk Music</a>
-                    <a href="#Classical Music">Classical Music</a>
-                    <a href="#Heavy Metal">Heavy Metal</a>
-                    <a href="#Country Music">Country Music</a>
-                    <a href="#Funk">Funk</a>
-                    <a href="#K-Pop">K-Pop</a>
-                    <a href="#Grunge">Grunge</a>
-                    <a href="#Hip hop">Hip Hop</a>
-                    <a href="#Indie Rock">Indie Rock</a>
-                    <a href="#Hardcore Punk">Hardcore Punk</a>
-                    <a href="#Dance Music">Dance Music</a>
-                    <a href="#R&B">R&B</a>
-                    <a href="#Emo">Emo</a>
-                    <a href="#Christian Music">Christian Music</a>
+            <a href="index.html" class="navbar__link">HOME</a> <!-- Link to home page -->
+            <div class="navbar__dropdown">
+                <a href="#Genre" class="navbar__link navbar__link--dropdown">GENRE</a> <!-- Dropdown for genres -->
+                <div class="navbar__dropdown--content">
+                    <a href="GENREJPop.html" class="navbar__link">J-Pop</a>
+                    <a href="GENREPopRock.html"class="navbar__link">Pop Rock</a>
+                    <a href="GENREPopMusic.html"class="navbar__link">Pop Music</a>
+                    <a href="GENREAlternative.html"class="navbar__link">Alternative</a>
+                    <a href="GENREPostHardcore.html"class="navbar__link">PostHardcore</a>
+                    <a href="GENRER&B.html"class="navbar__link">R&B</a>
+                    <a href="GENRESoul.html"class="navbar__link">Soul</a>
+                    <a href="GENREContemporary.html"class="navbar__link">Contemporary</a>
+                    <a href="GENREGospel.html"class="navbar__link">Gospel</a>
                 </div>
             </div>
-            <a href="#Video">VIDEO</a>
-            <a href="about.html">ABOUT</a>
+            <a href="about.html" class="navbar__link">ABOUT</a> <!-- Link to about page -->
         </div>
+
+
 
 <!-- This section is for sample content only, to be replaced with JS Script for fetching data once available -->
         <div class="song">
-            <div class="song-container">
-                <img src="https://i.ytimg.com/vi/sARtzVKoHM0/maxresdefault.jpg" alt="Song Thumbnail" class="thumbnail">
-                <div class="song-details">
-                    <p class="title">Out of Love</p>
-                    <p class="singer">Alessia Cara</p>
+            <div class="song__container">
+                <img class="song__thumbnail" src="https://i.ytimg.com/vi/sARtzVKoHM0/maxresdefault.jpg" alt="Song Thumbnail">
+                <div class="song__details">
+                    <p class="song__title">Out of Love</p>
+                    <p class="song__singer">Alessia Cara</p>
+                    <div class="song__genres">
+                        <a href="GENREPopMusic.html" class="song__genre">Pop</a>
+                        <a href="GENRER&B.html" class="song__genre">R&B</a>
+                        <a href="GENRESoul.html" class="song__genre">Soul</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="media-container">
-                
-                <div class="lyrics">
-                    I won't tell you I'm lonely<br>
-                    'Cause it may be selfish<br>
-                    I won't ask you to hold me<br>
-                    'Cause that won't mend what's helpless<br><br>
-                    There's not a thing I could say<br>
-                    Not a song I could sing<br>
-                    For your mind to change<br>
-                    Nothing can fill up the space<br>
-                    Won't ask you to stay<br>
-                    But let me ask you one thing<br><br>
-                    Oh, when did you fall out of love, out of love?<br>
-                    Oh, when did you fall out of love with me?<br><br>
-                    I can't float in an ocean<br>
-                    That's already been drained<br>
-                    I won't cry at your feet now<br>
-                    I know my tears will fall in vain<br><br>
-                    There's not a thing I could say<br>
-                    Not a song I could sing<br>
-                    For your mind to change<br>
-                    Nothing can fill up the space<br>
-                    Won't ask you to stay<br>
-                    But let me ask you one thing<br><br>
-                    Oh, when did you fall out of love, out of love?<br>
-                    Oh, when did you fall out of love with me?<br><br>
-                    No use wondering<br>
-                    Why your change in heart has wandered<br>
-                    So I'll ask you this question<br>
-                    'Cause it might help me sleep longer<br><br>
-                    Oh, when did you fall out of love, out of love?<br>
-                    Oh, when did you run out of love for me?<br><br>
-                    Out of love (out of love)<br>
-                    Out of love (out of love)<br>
-                    Out of love with me
-                                        
-                </div>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vAtdxbd6D_o?si=fqDMZq5dx4Q7KR84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-    </div>
+            <div class="video__container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vAtdxbd6D_o?si=fqDMZq5dx4Q7KR84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="lyrics">
+                I won't tell you I'm lonely<br>
+                'Cause it may be selfish<br>
+                I won't ask you to hold me<br>
+                'Cause that won't mend what's helpless<br><br>
+                There's not a thing I could say<br>
+                Not a song I could sing<br>
+                For your mind to change<br>
+                Nothing can fill up the space<br>
+                Won't ask you to stay<br>
+                But let me ask you one thing<br><br>
+                Oh, when did you fall out of love, out of love?<br>
+                Oh, when did you fall out of love with me?<br><br>
+                I can't float in an ocean<br>
+                That's already been drained<br>
+                I won't cry at your feet now<br>
+                I know my tears will fall in vain<br><br>
+                There's not a thing I could say<br>
+                Not a song I could sing<br>
+                For your mind to change<br>
+                Nothing can fill up the space<br>
+                Won't ask you to stay<br>
+                But let me ask you one thing<br><br>
+                Oh, when did you fall out of love, out of love?<br>
+                Oh, when did you fall out of love with me?<br><br>
+                No use wondering<br>
+                Why your change in heart has wandered<br>
+                So I'll ask you this question<br>
+                'Cause it might help me sleep longer<br><br>
+                Oh, when did you fall out of love, out of love?<br>
+                Oh, when did you run out of love for me?<br><br>
+                Out of love (out of love)<br>
+                Out of love (out of love)<br>
+                Out of love with me
+            </div>
+        </div>
     <script src="script.js"></script> <!-- Linking to external JavaScript file -->
 </body>
+<footer class="footer">
+    <div class="footer__container">
+    <div class="footer__section footer__section--left">
+        <h3 class="footer__heading footer__heading--brand">LYRICA</h3>
+        <p class="footer__text">&copy; 2024 Lyrica. All Rights Reserved.</p>
+    </div>
+    
+    <div class="footer__section footer__section--center">
+        <ul class="footer__nav">
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact</a></li>
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Terms of Service</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer__section footer__section--right">
+        <ul class="footer__social">
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="Facebook"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://clipart-library.com/new_gallery/58-580603_twitter-icon-white-transparent-transparent-background-twitter-logo.png" alt="Twitter"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://img.icons8.com/win8/200/FFFFFF/instagram-new.png" alt="Instagram"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png" alt="LinkedIn"></a></li>
+        </ul>
+    </div>
+    </div>
+</footer>
 </html>

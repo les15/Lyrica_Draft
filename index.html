@@ -13,105 +13,127 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header section with title and search bar -->
+        <!-- Header Section -->
         <div class="header">
-            <div class="title-search">
-                <h1>LYRICA</h1>
-                <div class="search-bar">
-                    <form action="search.html" method="GET">
-                        <input type="text" name="query" placeholder="Search" aria-label="Search for lyrics or songs">
+            <div class="header__title-search">
+                <h1>LYRICA</h1> <!-- Main title of the website -->
+                <div class="header__search-bar">
+                    <form action="search.html" method="GET"> <!-- Search form -->
+                        <input type="text" name="query" placeholder="Search"> <!-- Search input field -->
                     </form>
                 </div>
             </div>
         </div>
 
-        <!-- Navigation bar -->
+        <!-- Navigation Bar -->
         <div class="navbar">
-            <a href="index.html">HOME</a>
-            <div class="dropdown">
-                <a href="#Genre" class="dropdown-toggle">GENRE</a>
-                <div class="dropdown-content">
-                    <!-- List of genres -->
-                    <a href="#Jazz">Jazz</a>
-                    <a href="#Reggae">Reggae</a>
-                    <a href="#Pop Music">Pop Music</a>
-                    <a href="#Rock">Rock</a>
-                    <a href="#Folk Music">Folk Music</a>
-                    <a href="#Classical Music">Classical Music</a>
-                    <a href="#Heavy Metal">Heavy Metal</a>
-                    <a href="#Country Music">Country Music</a>
-                    <a href="#Funk">Funk</a>
-                    <a href="#K-Pop">K-Pop</a>
-                    <a href="#Grunge">Grunge</a>
-                    <a href="#Hip hop">Hip Hop</a>
-                    <a href="#Indie Rock">Indie Rock</a>
-                    <a href="#Hardcore Punk">Hardcore Punk</a>
-                    <a href="#Dance Music">Dance Music</a>
-                    <a href="#R&B">R&B</a>
-                    <a href="#Emo">Emo</a>
-                    <a href="#Christian Music">Christian Music</a>
+            <a href="index.html" class="navbar__link">HOME</a> <!-- Link to home page -->
+            <div class="navbar__dropdown">
+                <a href="#Genre" class="navbar__link navbar__link--dropdown">GENRE</a> <!-- Dropdown for genres -->
+                <div class="navbar__dropdown--content">
+                    <a href="GENREJPop.html" class="navbar__link">J-Pop</a>
+                    <a href="GENREPopRock.html"class="navbar__link">Pop Rock</a>
+                    <a href="GENREPopMusic.html"class="navbar__link">Pop Music</a>
+                    <a href="GENREAlternative.html"class="navbar__link">Alternative</a>
+                    <a href="GENREPostHardcore.html"class="navbar__link">PostHardcore</a>
+                    <a href="GENRER&B.html"class="navbar__link">R&B</a>
+                    <a href="GENRESoul.html"class="navbar__link">Soul</a>
+                    <a href="GENREContemporary.html"class="navbar__link">Contemporary</a>
+                    <a href="GENREGospel.html"class="navbar__link">Gospel</a>
                 </div>
             </div>
-            <a href="#Video">VIDEO</a>
-            <a href="about.html">ABOUT</a>
+            <a href="about.html" class="navbar__link">ABOUT</a> <!-- Link to about page -->
         </div>
 
         <!-- Main content section -->
         <div class="content">
             <h1>TOP SONGS</h1>
             <div class="separator"></div>
+
             <!-- Table of top songs -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th></th> <!-- Empty header for thumbnail column -->
-                        <th>Song Title</th>
-                        <th>Artist</th>
-                        <th>Views</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Sample content rows; to be replaced with dynamic data from JS -->
-                    <tr>
-                        <td>1</td>
-                        <td><img src="https://emomiu.jp/wp/wp-content/uploads/2022/08/dish_replay1.jpg" alt="Neko (Cat)" class="thumbnail"></td>
-                        <td><a href="neko.html">Neko (Cat)</a></td> 
-                        <td>DISH//</td>
-                        <td>3.2B</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><img src="https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/0f/a5/98/0fa598d9-bf7c-bbba-e29c-b7fdc1270316/886447819074.jpg/1200x1200bf-60.jpg" alt="Dancing With Your Ghost" class="thumbnail"></td>
-                        <td><a href="DancingWithYourGhost.html">Dancing With Your Ghost</a></td> 
-                        <td>Sasha Alex Sloan</td>
-                        <td>2.8B</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><img src="https://www.game-ost.ru/static/covers_soundtracks/4/7/473845_97898.jpg" alt="Vandalize" class="thumbnail"></td>
-                        <td><a href="vandalize.html">Vandalize</a></td> 
-                        <td>One OK Rock</td>
-                        <td>2.6B</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><img src="https://i.ytimg.com/vi/sARtzVKoHM0/maxresdefault.jpg" alt="Out of Love" class="thumbnail"></td>
-                        <td><a href="OutofLove.html">Out of Love</a></td> 
-                        <td>Alessia Cara</td>
-                        <td>5.5B</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><img src="https://th.bing.com/th/id/OIP.wverTkhTq734ap0iw-KfbwHaEL?rs=1&pid=ImgDetMain" alt="Speak the Name/Call the Name" class="thumbnail"></td>
-                        <td><a href="SpeaktheName.html">Speak the Name/Call the Name</a></td> 
-                        <td>Indiana Bible College</td>
-                        <td>2.1B</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr class="table__row">
+                            <th class="table__header">Rank</th>
+                            <th class="table__header"></th> <!-- Empty header for thumbnail column -->
+                            <th class="table__header">Song Title</th>
+                            <th class="table__header">Artist</th>
+                            <th class="table__header">Views</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Sample content rows; to be replaced with dynamic data from JS -->
+                        <tr class="table__row">
+                            <td class="table__cell">1</td>
+                            <td class="table__cell"><img src="https://emomiu.jp/wp/wp-content/uploads/2022/08/dish_replay1.jpg" alt="Neko (Cat)" class="thumbnail"></td>
+                            <td class="table__cell table__cell--song-title"><a href="neko.html" class="content__link">Neko (Cat)</a></td> 
+                            <td class="table__cell table__cell--song-title">DISH//</td>
+                            <td class="table__cell">3.2B</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">2</td>
+                            <td class="table__cell"><img src="https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/0f/a5/98/0fa598d9-bf7c-bbba-e29c-b7fdc1270316/886447819074.jpg/1200x1200bf-60.jpg" alt="Dancing With Your Ghost" class="thumbnail"></td>
+                            <td class="table__cell table__cell--song-title"><a href="DancingWithYourGhost.html" class="content__link">Dancing With Your Ghost</a></td> 
+                            <td class="table__cell table__cell--song-artist">Sasha Alex Sloan</td>
+                            <td class="table__cell">2.8B</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">3</td>
+                            <td class="table__cell"><img src="https://www.game-ost.ru/static/covers_soundtracks/4/7/473845_97898.jpg" alt="Vandalize" class="thumbnail"></td>
+                            <td class="table__cell table__cell--song-title"><a href="vandalize.html" class="content__link">Vandalize</a></td> 
+                            <td class="table__cell table__cell--song-artist">One OK Rock</td>
+                            <td class="table__cell">2.6B</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">4</td>
+                            <td class="table__cell"><img src="https://i.ytimg.com/vi/sARtzVKoHM0/maxresdefault.jpg" alt="Out of Love" class="thumbnail"></td>
+                            <td class="table__cell table__cell--song-title"><a href="OutofLove.html" class="content__link">Out of Love</a></td> 
+                            <td class="table__cell table__cell--song-artist">Alessia Cara</td>
+                            <td class="table__cell">5.5B</td>
+                        </tr>
+                        <tr class="table__row">
+                            <td class="table__cell">5</td>
+                            <td class="table__cell"><img src="https://th.bing.com/th/id/OIP.wverTkhTq734ap0iw-KfbwHaEL?rs=1&pid=ImgDetMain" alt="Speak the Name/Call the Name" class="thumbnail"></td>
+                            <td class="table__cell table__cell--song-title"><a href="SpeaktheName.html" class="content__link">Speak the Name/Call the Name</a></td> 
+                            <td class="table__cell table__cell--song-artist">Indiana Bible College</td>
+                            <td class="table__cell">2.1B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script> <!-- Linking to external JavaScript file -->
-</body>
+        <script src="script.js"></script> <!-- Linking to external JavaScript file -->
+    </body>
+
+    <!-- Footer Section -->
+<!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+        <div class="footer__section footer__section--left">
+            <h3 class="footer__heading footer__heading--brand">LYRICA</h3>
+            <p class="footer__text">&copy; 2024 Lyrica. All Rights Reserved.</p>
+        </div>
+        
+        <div class="footer__section footer__section--center">
+            <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Terms of Service</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer__section footer__section--right">
+            <ul class="footer__social">
+            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="Facebook"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://clipart-library.com/new_gallery/58-580603_twitter-icon-white-transparent-transparent-background-twitter-logo.png" alt="Twitter"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://img.icons8.com/win8/200/FFFFFF/instagram-new.png" alt="Instagram"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png" alt="LinkedIn"></a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+  
+  
 </html>
+

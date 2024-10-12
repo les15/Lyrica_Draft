@@ -11,165 +11,184 @@
     <title>Neko (Cat) by DISH// - Lyrica</title>
 </head>
 <body>
-    <div class="container"> <!-- Main container for the webpage -->
-        <div class="header"> <!-- Header section for the title and search bar -->
-            <div class="title-search"> <!-- Wrapper for title and search elements -->
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="header__title-search">
                 <h1>LYRICA</h1> <!-- Main title of the website -->
-                <div class="search-bar"> <!-- Search bar for user input -->
-                    <form action="search.html" method="GET"> <!-- Form for search functionality -->
-                        <input type="text" name="query" placeholder="Search"> <!-- Input field for search query -->
+                <div class="header__search-bar">
+                    <form action="search.html" method="GET"> <!-- Search form -->
+                        <input type="text" name="query" placeholder="Search"> <!-- Search input field -->
                     </form>
                 </div>
             </div>
         </div>
-        <div class="navbar"> <!-- Navigation bar for website links -->
-            <a href="index.html">HOME</a> <!-- Link to home page -->
-            <div class="dropdown"> <!-- Dropdown menu for music genres -->
-                <a href="#Genre" class="dropdown-toggle">GENRE</a> <!-- Dropdown toggle link -->
-                <div class="dropdown-content"> <!-- Dropdown menu items -->
-                    <a href="#Jazz">Jazz</a>
-                    <a href="#Reggae">Reggae</a>
-                    <a href="#Pop Music">Pop Music</a>
-                    <a href="#Rock">Rock</a>
-                    <a href="#Folk Music">Folk Music</a>
-                    <a href="#Classical Music">Classical Music</a>
-                    <a href="#Heavy Metal">Heavy Metal</a>
-                    <a href="#Country Music">Country Music</a>
-                    <a href="#Funk">Funk</a>
-                    <a href="#K-Pop">K-Pop</a>
-                    <a href="#Grunge">Grunge</a>
-                    <a href="#Hip hop">Hip Hop</a>
-                    <a href="#Indie Rock">Indie Rock</a>
-                    <a href="#Hardcore Punk">Hardcore Punk</a>
-                    <a href="#Dance Music">Dance Music</a>
-                    <a href="#R&B">R&B</a>
-                    <a href="#Emo">Emo</a>
-                    <a href="#Christian Music">Christian Music</a>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html" class="navbar__link">HOME</a> <!-- Link to home page -->
+            <div class="navbar__dropdown">
+                <a href="#Genre" class="navbar__link navbar__link--dropdown">GENRE</a> <!-- Dropdown for genres -->
+                <div class="navbar__dropdown--content">
+                    <a href="GENREJPop.html" class="navbar__link">J-Pop</a>
+                    <a href="GENREPopRock.html"class="navbar__link">Pop Rock</a>
+                    <a href="GENREPopMusic.html"class="navbar__link">Pop Music</a>
+                    <a href="GENREAlternative.html"class="navbar__link">Alternative</a>
+                    <a href="GENREPostHardcore.html"class="navbar__link">PostHardcore</a>
+                    <a href="GENRER&B.html"class="navbar__link">R&B</a>
+                    <a href="GENRESoul.html"class="navbar__link">Soul</a>
+                    <a href="GENREContemporary.html"class="navbar__link">Contemporary</a>
+                    <a href="GENREGospel.html"class="navbar__link">Gospel</a>
                 </div>
             </div>
-            <a href="#Video">VIDEO</a> <!-- Link to video section -->
-            <a href="about.html">ABOUT</a> <!-- Link to about page -->
+            <a href="about.html" class="navbar__link">ABOUT</a> <!-- Link to about page -->
         </div>
+
+
+
 
         <!-- This section is for sample content only, to be replaced with JS Script for fetching data once available -->
-        <div class="song"> <!-- Container for displaying song details -->
-            <div class="song-container"> <!-- Wrapper for song image and details -->
-                <img src="https://emomiu.jp/wp/wp-content/uploads/2022/08/dish_replay1.jpg" alt="Song Thumbnail" class="thumbnail"> <!-- Thumbnail image for the song -->
-                <div class="song-details"> <!-- Details of the song -->
-                    <p class="title">Neko (Cat)</p> <!-- Title of the song -->
-                    <p class="singer">DISH//</p> <!-- Singer or band name -->
-                </div>
-            </div>
-
-            <div class="media-container"> <!-- Container for lyrics and video -->
-                
-                <div class="lyrics"> <!-- Original lyrics section -->
-                    yuuyake ga moete kono machi goto<br>
-                    nomikonde shimai sou na kyou ni<br>
-                    boku wa kimi o tebanashite shimatta<br>
-                    ashita ga fuanda totemo iyada<br>
-                    dakara kono boku mo issho ni<br>
-                    nomikonde shimae yo yuuyake<br>
-                    <br>
-                    dakedomo sou wa ikanai yo na<br>
-                    ashita tte uzai hodo kuru yo na<br>
-                    nemutai yoru ni nandaka waratchau<br>
-                    <br>
-                    uchi made kaerou hitori de kaerou<br>
-                    kinou no koto nado maboroshida to omouo<br>
-                    kimi no kao nante wasurete yaru sa bakabakashii darou, sou darou<br>
-                    <br>
-                    kimi ga inaku natta hibi mo<br>
-                    kono dou shiyou mo nai kedarusa mo<br>
-                    kokoro to karada ga kenka shite<br>
-                    tayorinai boku wa nekoronde<br>
-                    neko ni natta nda yo na kimi wa<br>
-                    itsuka furatto arawarete kure<br>
-                    nanigenai mainichi o kimiiro ni<br>
-                    somete okureyo<br>
-                    <br>
-                    yuuyake ga moete kono machi goto nomikonde shimai sou na kyou ni<br>
-                    boku wa kimi o tebanashite shimatta<br>
-                    waka sugiru bokura wa mata ichi kara<br>
-                    deau koto wa kanou nano ka na<br>
-                    negau dake mudanara mou dame da<br>
-                    <br>
-                    uchi made tsuku no ga konna ni mo iyada<br>
-                    aruku supiido wa<br>
-                    kimi ga to
-
-                    <div class="translation"> <!-- English translation section -->
-                        <p>[English Translation]</p> <!-- Translation heading -->
+        <div class="song">
+            <div class="song__container">
+                <img class="song__thumbnail" src="https://emomiu.jp/wp/wp-content/uploads/2022/08/dish_replay1.jpg" alt="Song Thumbnail">
+                <div class="song__details">
+                    <p class="song__title">Neko (Cat)</p>
+                    <p class="song__singer">DISH//</p>
+                    <div class="song__genres">
+                        <a href="GENREJPop.html" class="song__genre">J-Pop</a>
+                        <a href="GENREPopRock.html" class="song__genre">Pop Rock</a>
                     </div>
-
-                    Today, where the sunset burned out and <br>
-                    seems to swallow this city up,<br>
-                    I ended up letting you go<br>
-                    I feel anxious about tomorrow, I really hate it<br>
-                    I wish the sunset would also swallow me up<br>
-                    <br>
-                    But of course that won’t happen<br>
-                    Tomorrow is coming, it’s so annoying<br>
-                    Somehow I laughed at this sleepy night<br>
-                    <br>
-                    Let’s just go home, I’ll go home alone<br>
-                    I’ll just assume yesterday and its other things are just illusion<br>
-                    I will forget how your face looks like<br>
-                    It’s dumb, right?<br>
-                    <br>
-                    These days without you<br>
-                    and this laziness I can’t deny<br>
-                    My heart and my body are fighting<br>
-                    Throwing the helpless me down<br>
-                    You’ve become a cat, don’t you?<br>
-                    Someday please appear for me<br>
-                    Dye these casual days with your color<br>
-                    <br>
-                    Today, where the sunset burned out and <br>
-                    seems to swallow this city up,<br>
-                    I ended up letting you go<br>
-                    I wonder is it possible for us to meet again from the very beginning?<br>
-                    If only wishing is pointless,<br>
-                    then it’s impossible<br>
-                    <br>
-                    I really hate going home like this<br>
-                    I walk at a speed just like when you were walking beside me<br>
-                    I’m surrounded by memories<br>
-                    Nothing but only sighs that bound me up<br>
-                    Mock at me, laugh at me<br>
-                    <br>
-                    These days without you are boring to the point it becomes funny<br>
-                    Even though I try to forget you with all my strength,<br>
-                    I’m yearning for you with all parts of me<br>
-                    You’ve become a cat, don’t you?<br>
-                    Someday let me hear that voice again<br>
-                    I’m nothing but a contradiction, I become so ridiculous<br>
-                    I wish you were here to comfort me<br>
-                    <br>
-                    These days without you<br>
-                    and this laziness I can’t deny<br>
-                    My heart and my body are fighting<br>
-                    Throwing the helpless me down<br>
-                    You’ve become a cat, don’t you?<br>
-                    Someday please appear for me<br>
-                    Dye these casual days with your color<br>
-                    <br>
-                    If you become a stray cat,<br>
-                    I will hold you tight in my arms<br>
-                    If you’re hurt, I’ll wipe out your scars<br>
-                    and give you all the best warmth I had<br>
-                    I miss you, I can’t forget you<br>
-                    You’ve become a cat, but please appear for me<br>
-                    Someday when you appear for me<br>
-                    I will be happy again
-                </div>
-
-                <div class="video-container"> <!-- Container for embedded video -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gsT6eKsnT0M?si=YY_EJxJAee9nbJf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
+            <div class="video__container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gsT6eKsnT0M?si=YY_EJxJAee9nbJf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+            </div>
+            <div class="lyrics">
+                yuuyake ga moete kono machi goto<br>
+                nomikonde shimai sou na kyou ni<br>
+                boku wa kimi o tebanashite shimatta<br>
+                ashita ga fuanda totemo iyada<br>
+                dakara kono boku mo issho ni<br>
+                nomikonde shimae yo yuuyake<br>
+                <br>
+                dakedomo sou wa ikanai yo na<br>
+                ashita tte uzai hodo kuru yo na<br>
+                nemutai yoru ni nandaka waratchau<br>
+                <br>
+                uchi made kaerou hitori de kaerou<br>
+                kinou no koto nado maboroshida to omouo<br>
+                kimi no kao nante wasurete yaru sa bakabakashii darou, sou darou<br>
+                <br>
+                kimi ga inaku natta hibi mo<br>
+                kono dou shiyou mo nai kedarusa mo<br>
+                kokoro to karada ga kenka shite<br>
+                tayorinai boku wa nekoronde<br>
+                neko ni natta nda yo na kimi wa<br>
+                itsuka furatto arawarete kure<br>
+                nanigenai mainichi o kimiiro ni<br>
+                somete okureyo<br>
+                <br>
+                yuuyake ga moete kono machi goto nomikonde shimai sou na kyou ni<br>
+                boku wa kimi o tebanashite shimatta<br>
+                waka sugiru bokura wa mata ichi kara<br>
+                deau koto wa kanou nano ka na<br>
+                negau dake mudanara mou dame da<br>
+                <br>
+                uchi made tsuku no ga konna ni mo iyada<br>
+                aruku supiido wa<br>
+                kimi ga to
+
+                <br>
+                [ENGLISH TRANSLATION]
+                <br>
+
+                Today, where the sunset burned out and <br>
+                seems to swallow this city up,<br>
+                I ended up letting you go<br>
+                I feel anxious about tomorrow, I really hate it<br>
+                I wish the sunset would also swallow me up<br>
+                <br>
+                But of course that won’t happen<br>
+                Tomorrow is coming, it’s so annoying<br>
+                Somehow I laughed at this sleepy night<br>
+                <br>
+                Let’s just go home, I’ll go home alone<br>
+                I’ll just assume yesterday and its other things are just illusion<br>
+                I will forget how your face looks like<br>
+                It’s dumb, right?<br>
+                <br>
+                These days without you<br>
+                and this laziness I can’t deny<br>
+                My heart and my body are fighting<br>
+                Throwing the helpless me down<br>
+                You’ve become a cat, don’t you?<br>
+                Someday please appear for me<br>
+                Dye these casual days with your color<br>
+                <br>
+                Today, where the sunset burned out and <br>
+                seems to swallow this city up,<br>
+                I ended up letting you go<br>
+                I wonder is it possible for us to meet again from the very beginning?<br>
+                If only wishing is pointless,<br>
+                then it’s impossible<br>
+                <br>
+                I really hate going home like this<br>
+                I walk at a speed just like when you were walking beside me<br>
+                I’m surrounded by memories<br>
+                Nothing but only sighs that bound me up<br>
+                Mock at me, laugh at me<br>
+                <br>
+                These days without you are boring to the point it becomes funny<br>
+                Even though I try to forget you with all my strength,<br>
+                I’m yearning for you with all parts of me<br>
+                You’ve become a cat, don’t you?<br>
+                Someday let me hear that voice again<br>
+                I’m nothing but a contradiction, I become so ridiculous<br>
+                I wish you were here to comfort me<br>
+                <br>
+                These days without you<br>
+                and this laziness I can’t deny<br>
+                My heart and my body are fighting<br>
+                Throwing the helpless me down<br>
+                You’ve become a cat, don’t you?<br>
+                Someday please appear for me<br>
+                Dye these casual days with your color<br>
+                <br>
+                If you become a stray cat,<br>
+                I will hold you tight in my arms<br>
+                If you’re hurt, I’ll wipe out your scars<br>
+                and give you all the best warmth I had<br>
+                I miss you, I can’t forget you<br>
+                You’ve become a cat, but please appear for me<br>
+                Someday when you appear for me<br>
+                I will be happy again  
+            </div>
     </div>
     <script src="script.js"></script> <!-- Linking to external JavaScript file -->
 </body>
+<footer class="footer">
+    <div class="footer__container">
+    <div class="footer__section footer__section--left">
+        <h3 class="footer__heading footer__heading--brand">LYRICA</h3>
+        <p class="footer__text">&copy; 2024 Lyrica. All Rights Reserved.</p>
+    </div>
+    
+    <div class="footer__section footer__section--center">
+        <ul class="footer__nav">
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contact</a></li>
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Terms of Service</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer__section footer__section--right">
+        <ul class="footer__social">
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="Facebook"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://clipart-library.com/new_gallery/58-580603_twitter-icon-white-transparent-transparent-background-twitter-logo.png" alt="Twitter"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://img.icons8.com/win8/200/FFFFFF/instagram-new.png" alt="Instagram"></a></li>
+        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png" alt="LinkedIn"></a></li>
+        </ul>
+    </div>
+    </div>
+</footer>
 </html>

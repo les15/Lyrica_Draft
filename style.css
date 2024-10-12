@@ -4,17 +4,17 @@
     box-sizing: border-box; 
 }
 
+
 /* Header banner style */
 .header {
-    height: 94px;
+    height: 10%; /* Adjusted height to a percentage */
     background-color: #B18FCF; 
     position: relative;
     color: white;
 }
 
-
 /* Container for title and search bar */
-.title-search {
+.header__title-search {
     display: flex;
     align-items: center;   
     justify-content: center; 
@@ -22,145 +22,136 @@
 }
 
 /* Center the title */
-.title-search h1 {
-    margin: 0 20px; 
-    font-size: 64px; 
+.header__title-search h1 {
+    margin: 0 2%; /* Adjusted to percentage */
+    font-size: 3vw; /* Changed to viewport width */
     color: white; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Increased shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     font-family: 'Kalnia', sans-serif; 
-    font-weight: bold; /* Thicker text */
-    letter-spacing: 2px; /* Add letter spacing */
+    font-weight: bold; 
+    letter-spacing: 2px; 
 }
 
 /* Style for the search bar */
-.search-bar {
+.header__search-bar {
     position: absolute;  
-    right: 100px;         
+    right: 5%; /* Adjusted to percentage */
 }
 
-.search-bar input {
-    padding: 5px 15px; 
-    font-size: 16px; 
-    border-radius: 20px; 
+.header__search-bar input {
+    padding: 2%; /* Adjusted to percentage */
+    font-size: 0.80vw; /* Changed to viewport width */
+    border-radius: 10px; 
     border: 1px solid #ccc; 
-    
 }
 
-/* navbar spaced */
+/* Navbar spaced */
 .navbar {
-    height: 40px;
-    margin-top: 5px; 
-    margin-bottom: 5px;
+    height: 5%; /* Adjusted height to a percentage */
+    margin: 0.5% 0; /* Adjusted to percentage */
     display: flex; 
     justify-content: center; 
     align-items: center;
-    gap: 100px; 
+    gap: 5%; /* Adjusted to percentage */
 }
 
 /* Styling for navbar links */
-.navbar a {
+.navbar__link {
     text-decoration: none; 
     color: #551470; 
-    padding: 0 15px; 
+    padding: 0 2%; /* Adjusted to percentage */
     font-weight: bold; 
-    font-size: 15px;
+    font-size: 0.9vw; /* Changed to viewport width */
     font-family: 'Kalnia', sans-serif;
-    line-height: 40px; 
+    line-height: 5%; /* Adjusted to percentage */
     transition: background-color 0.3s ease;
 }
 
 /* Remove any margin */
-.navbar a {
+.navbar__link {
     margin: 0; 
 }
+
 /* Hover effect */
-.navbar a:hover {
-    color: #978897; /* Change this to your desired hover font color */
-    background-color: transparent; /* Explicitly set background to transparent */
+.navbar__link:hover {
+    color: #978897; 
+    background-color: transparent; 
 }
 
-/***************************************************************************/
-**/
 /* Dropdown container */
-.dropdown {
+.navbar__dropdown {
     position: relative; 
 }
 
 /* Dropdown content */
-.dropdown-content {
+.navbar__dropdown--content {
     display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 5px; 
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 1.5vw; /* Space between items */
     display: none; 
     position: absolute;
-    min-width: 500px; 
+    min-width: 25vw; 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
     z-index: 1; 
-
-    background: linear-gradient(135deg, #6b576b, #978897); /* Gradient colors */
-    padding: 20px; /* Padding */
-    border-radius: 10px; /* Rounded corners */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
-    margin: 20px 0; /* Optional: spacing around the tab */
+    background: linear-gradient(135deg, #6b576b, #978897); 
+    padding: 1vw; /* Padding around the dropdown */
+    border-radius: 0.5vw; 
 }
 
 /* Show dropdown on hover */
-.dropdown:hover .dropdown-content {
+.navbar__dropdown:hover .navbar__dropdown--content {
     display: grid; 
 }
 
 /* Style for dropdown links */
-.dropdown-content a {
+.navbar__dropdown--link {
     color: white; 
-    padding: 10px; 
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 15px; /* Increased padding for more space */
     text-decoration: none; 
     display: block; 
-    text-align: justify; 
+    text-align: center; /* Center the text */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Change background color on hover */
-.dropdown-content a:hover {
-    background-color: transparent; 
+.navbar__dropdown-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
 }
 
 /* Adjusting the navbar links on hover */
-.navbar a:hover {
+.navbar__link:hover {
     background-color: transparent; 
 }
 
-/***************************************************************************/
 /* Content area styling */
 .content {
     background-image: url('https://wallpapercave.com/wp/wp7952844.jpg');
     background-size: cover;
     background-position: center;
-    padding: 130px; 
-    padding-top: 90px;
+    padding: 8vw; 
     text-align: justify; 
     background-color: #B18FCF; 
     color: white; 
-    font-size: 40px;
+    font-size: 2.5vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     min-height: 100vh; /* Set minimum height to fill the viewport */
     font-family: 'League Spartan', sans-serif; 
 }
 
-.content a {
+.content__link {
     color: white; /* Change the color to match your theme */
     text-decoration: none; /* Remove underline */
 }
 
-.content a:hover {
+.content__link:hover {
     text-decoration: underline; /* Add underline on hover for effect */
 }
-/***************************************************************************/
-/* Seperator styling */
+
+/* Separator styling */
 .separator {
     width: 100%; 
-    height: 2px; 
+    height: 0.1vw; 
     background-color: white; 
     border-radius: 20px; 
     margin: 20px auto; 
@@ -172,87 +163,97 @@
 .separator::after {
     content: '';
     position: absolute;
-    width: 12px; 
-    height: 12px; 
+    width: 0.5vw; 
+    height: 0.5vw; 
     background-color: white; 
     border-radius: 50%; 
-    top: -5px; 
+    top: -0.2vw; 
 }
 
 .separator::before {
-    left: -6px; 
+    left: -0.2vw; 
 }
 
 .separator::after {
-    right: -6px; 
+    right: -0.2vw; 
 }
-/***************************************************************************/
+
 /* Table styling */
-table {
-    padding-top: 50px;
+.table__container {
+    width: 100%; 
+    margin: 2vw auto; /* Center the table */
+    padding: 2vw; /* Space around the table */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: add a background to make it stand out */
+    border-radius: 1vw; /* Rounded corners for the container */
+}
+
+/* Table styling */
+.table {
+    padding-top: 2vw;
     width: 100%; 
     border-collapse: separate; 
-    border-spacing: 0 10px; 
-    margin-top: 20px; 
+    border-spacing: 0 0.25vw; 
+    margin-top: 2vw; 
     background-color: transparent; 
     color: white; 
-    font-size: 20px;
+    font-size: 1.5vw;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
     font-family: 'Inter', sans-serif; 
 }
 
 /* Header row styling */
-th {
+.table__header {
     background-color: #837583; 
-    padding: 10px;
+    padding: 0.75vw;
+    padding-left: 1vw;
     border: none; 
 }
 
-/* This section is for sample content only, to be replaced with JS Script for fetching data once available */
-
-thead th:first-child {
-    border-radius: 10px 0 0 10px; 
+/* Rounded corners for header cells */
+.table__header:first-child {
+    border-radius: 1vw 0 0 1vw; 
 }
 
-thead th:last-child {
-    border-radius: 0 10px 10px 0; 
+.table__header:last-child {
+    border-radius: 0 1vw 1vw 0; 
 }
 
 /* Table row styling */
-tr {
+.table__row {
     background-color: transparent; 
 }
 
 /* Apply background and rounded corners to each table cell */
-td {
+.table__cell {
     background-color: #978897; 
-    padding: 10px; 
+    padding: 0.5vw; 
     border: none; 
 }
 
 /* Adjust padding for song title cells */
-td:nth-child(3) { 
+.table__cell--song-title { 
     padding-left: 0px; 
 }
-/* Adjust padding for song title cells */
-td:nth-child(2) { 
+
+/* Adjust padding for song artist cells */
+.table__cell--song-artist { 
     padding-right: 0px; 
 }
 
 /* Apply rounded corners to the first and last cells of each row */
-tbody tr td:first-child {
-    border-radius: 10px 0 0 10px; 
+.table__row .table__cell:first-child {
+    border-radius: 1vw 0 0 1vw; 
 }
 
-tbody tr td:last-child {
-    border-radius: 0 10px 10px 0; 
+.table__row .table__cell:last-child {
+    border-radius: 0 1vw 1vw 0; 
 }
 
 .thumbnail {
-    width: 50px; 
-    height: 50px; 
+    width: 5vw; 
+    height: 5vw; 
     object-fit: cover; 
-    border-radius: 10px; 
+    border-radius: 1vw; 
 }
 
 /***************************************************************************/
@@ -262,98 +263,207 @@ tbody tr td:last-child {
     background-image: url('https://wallpapercave.com/wp/wp7952844.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 100vh; /* Set minimum height to fill the viewport */
+    min-height: 100vh; 
     margin: 0; 
     padding: 0;
-
 }
-/* Song container */
-.song-container {
-    display: flex;
-    align-items: center; /* Align items vertically centered */
-    gap: 15px; /* Space between thumbnail and text */
-    padding-top: 100px;
-    padding-left: 255px;
 
+/* Song container */
+.song__container {
+    display: flex;
+    align-items: center; 
+    gap: 2%; /* Adjusted to percentage */
+    padding-top: 5%; /* Adjusted to percentage */
+    padding-left: 10%; /* Adjusted to percentage */
 }
 
 /* Thumbnail size */
-.thumbnail {
-    width: 100px; 
-    height: 100px; 
+.song__thumbnail {
+    width: 5vw; /* Changed to viewport width */
+    height: 5vw; /* Changed to viewport width */
     object-fit: cover; 
     border-radius: 10px; 
 }
 
 /* Song details (title and singer) */
-.song-details {
+.song__details {
     display: flex;
     flex-direction: column;
 }
 
-.song-details .title {
-    font-size: 40px; /* Adjust font size for title */
-    font-family: 'Inter', sans-serif; /* Use Inter font */
+.song__details .song__title {
+    padding-top: 2vw;
+    font-size: 2vw; /* Changed to viewport width */
+    font-family: 'Inter', sans-serif; 
     font-weight: 900;
     color: #551470; 
     margin: 0;
 }
 
-.song-details .singer {
-    font-size: 25px; /* Adjust font size for singer name */
-    font-family: 'Inter', sans-serif; /* Use Inter font */
-    font-family: 'Inter', sans-serif; /* Use Inter font */
-    font-weight: 400; /* Apply Light weight */
-    color: white; 
-    margin: 0;
+.song__details .song__singer {
+    font-size: 1vw; /* Changed to viewport width */
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400; 
+    color: #ffffff; 
 }
+
+.song__genres {
+    margin-top: 0.5vw; /* Adds some space between the singer's name and the genres */
+}
+
+.song__genre {
+    display: inline-block;
+    margin-left: 0;
+    background-color: #f0f0f0; /* Example styling */
+    padding: 3px 8px;
+    border-radius: 1vw;
+    font-size: 0.75vw; /* Changed to viewport width */
+    font-family: 'Inter', sans-serif; 
+    text-decoration: none; /* Remove underline from links */
+
+}
+
+.song__genre:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
+
+/* Lyrics area styling */
 .lyrics {
-    color: #551470; /* White color for lyrics */
+    padding: 0%; /* Adjusted to percentage */
+    padding-top: 1vw;
+    color: #551470; /* Color for translation */
+    font-size: 1vw; /* Changed to viewport width */
     font-family: 'Inter', sans-serif; /* Inter font */
-    font-size: 20px; /* You can adjust the font size as needed */
     text-align: justify; /* Justify the text */
     white-space: pre-wrap;
-    padding-left: 260px;
-    right: 20px;
+    padding-left: 12.3%; /* Adjusted to percentage */
 }
 
-.translation {
-    color: #551470; /* White color for lyrics */
+.video__container {
+    position: fixed; /* Keep fixed position */
+    top: 300px; /* Fixed top position */
+    left: 75%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit to a max width */
+    overflow: hidden; /* Hide overflow */
+    z-index: 100; /* Ensure it's on top of other content */
+    border: 5px solid white; /* White border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 5px; /* Optional: space between border and iframe */
+    background-color: rgba(255, 255, 255, 0.5); /* Optional: background color for better visibility */
+}
+
+/* Iframe styling */
+.video__container iframe {
+    width: 100%; /* Full width */
+    height: auto; /* Automatic height */
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+    border: none; /* Remove default border */
+}
+
+@media (max-width: 768px) {
+    .video__container {
+        top: 150px; /* Adjust top position for smaller screens */
+        max-width: 50%; /* Allow more width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .video__container {
+        top: 150px; /* Further adjust top position for very small screens */
+        max-width: 50%; /* Full width on very small screens */
+    }
+}
+
+.songlist {
+    list-style: none; /* Remove default bullet points */
     font-family: 'Inter', sans-serif; /* Inter font */
-    font-weight: bold;
-    font-size: 20px; /* You can adjust the font size as needed */
-    text-align: justify; /* Justify the text */
-    white-space: pre-wrap;
-    padding-left: 110px;
-    right: 20px;
+    font-size: 2vw;
+
 }
 
-.media-container {
+/* Element styles for each list item */
+.songlist__item {
+    margin: 10px 0; /* Add vertical spacing between items */
+}
+
+/* Element styles for the anchor links */
+.songlist__link {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Dark text color */
+    padding: 10px; /* Add padding for clickable area */
+    display: block; /* Make the link fill the entire list item */
+    border-radius: 4px; /* Rounded corners for the link */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Modifier styles for link hover state */
+.songlist__link:hover {
+    background-color: #e2e2e2; /* Change to a lighter gray on hover */
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 0.5vw 0; /* 20px -> 2vw */
+    text-align: center;
+    font-family: 'Inter', sans-serif; /* Inter font */
+  }
+  
+  .footer__container {
     display: flex;
-    flex-direction: row;   /* Align items in a row */
-    justify-content: space-between;   /* Add space between video and lyrics */
-    align-items: flex-start;          /* Align video and lyrics at the top */
-    gap: 17px;                        /* Add gap between video and lyrics */
-    margin: 20px 0;
-}
-
-.video-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns video to the right */
-    margin: 20px; /* Add margin as needed */
-    margin-right: 260px;
-    border: 5px solid white; /* Change the border color and width as desired */
-    border-radius: 5px; /* Adjust this value for more or less rounding */
-    overflow: hidden; /* This ensures the border follows the rounded shape */
-}
-
-/***************************************************************************/
-.Info {
-    color: #651b85; /* Text color */
-    font-family: 'Inter', sans-serif; /* Font family */
-    font-size: 20px; /* Font size */
-    text-align: justify; /* Justify text */
-    white-space: pre-wrap; /* Maintain whitespace */
-    margin: 20px 0; /* Optional: spacing around the text */
-    box-shadow: none; /* Remove any shadow effect */
-}
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw; /* Adjusted to fit viewport width */
+    margin: 0 auto;
+  }
+  
+  .footer__section {
+    flex: 1;
+    padding: 1vw; /* 10px -> 1vw */
+  }
+  
+  .footer__heading {
+    font-size: 1vw; /* 24px -> 2.4vw */
+    margin-bottom: 1vw; /* 10px -> 1vw */
+  }
+  
+  .footer__heading--brand {
+    font-family: 'Kalnia', sans-serif;
+    font-size: 1.5vw; /* 28px -> 2.8vw */
+  }
+  
+  .footer__text {
+    font-size: 0.75vw; /* 14px -> 1.4vw */
+    margin-top: 1vw; /* 10px -> 1vw */
+  }
+  
+  .footer__nav,
+  .footer__social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__nav-item,
+  .footer__social-item {
+    display: inline-block;
+    margin: 0 1vw; /* 10px -> 1vw */
+  }
+  
+  .footer__nav-link,
+  .footer__social-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1vw; /* 14px -> 1.4vw */
+  }
+  
+  .footer__social-link img {
+    width: 1.5vw; /* 24px -> 2.4vw */
+    height: 1.5vw; /* 24px -> 2.4vw */
+    vertical-align: middle;
+  }
+  
