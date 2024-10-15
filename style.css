@@ -8,7 +8,7 @@
 /* Header banner style */
 .header {
     height: 10%; /* Adjusted height to a percentage */
-    background-color: #B18FCF; 
+    background: linear-gradient(to right, #FF69B4, #B18FCF); /* Pink to violet gradient */
     position: relative;
     color: white;
 }
@@ -27,7 +27,7 @@
     font-size: 3vw; /* Changed to viewport width */
     color: white; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-    font-family: 'Kalnia', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     font-weight: bold; 
     letter-spacing: 2px; 
 }
@@ -40,6 +40,7 @@
 
 .header__search-bar input {
     padding: 2%; /* Adjusted to percentage */
+    font-family: 'Poppins';
     font-size: 0.80vw; /* Changed to viewport width */
     border-radius: 10px; 
     border: 1px solid #ccc; 
@@ -60,9 +61,8 @@
     text-decoration: none; 
     color: #551470; 
     padding: 0 2%; /* Adjusted to percentage */
-    font-weight: bold; 
     font-size: 0.9vw; /* Changed to viewport width */
-    font-family: 'Kalnia', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 5%; /* Adjusted to percentage */
     transition: background-color 0.3s ease;
 }
@@ -93,9 +93,13 @@
     min-width: 25vw; 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
     z-index: 1; 
-    background: linear-gradient(135deg, #6b576b, #978897); 
+    background: linear-gradient(to left, #FF69B4, #B18FCF);
     padding: 1vw; /* Padding around the dropdown */
     border-radius: 0.5vw; 
+}
+
+.navbar__dropdown--content a {
+    color: #FFFFFF; /* White color for dropdown links */
 }
 
 /* Show dropdown on hover */
@@ -116,7 +120,7 @@
 
 /* Change background color on hover */
 .navbar__dropdown-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    background-color: linear-gradient(to right, #FF69B4, #B18FCF); /* Semi-transparent white */
 }
 
 /* Adjusting the navbar links on hover */
@@ -126,12 +130,11 @@
 
 /* Content area styling */
 .content {
-    background-image: url('https://wallpapercave.com/wp/wp7952844.jpg');
+    background-color: #020202;;
     background-size: cover;
     background-position: center;
     padding: 8vw; 
     text-align: justify; 
-    background-color: #B18FCF; 
     color: white; 
     font-size: 2.5vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
@@ -183,8 +186,9 @@
     width: 100%; 
     margin: 2vw auto; /* Center the table */
     padding: 2vw; /* Space around the table */
-    background-color: rgba(255, 255, 255, 0.1); /* Optional: add a background to make it stand out */
+    background-color: linear-gradient(to right, #FF69B4, #B18FCF); 
     border-radius: 1vw; /* Rounded corners for the container */
+    font-family: 'Poppins';
 }
 
 /* Table styling */
@@ -197,13 +201,11 @@
     background-color: transparent; 
     color: white; 
     font-size: 1.5vw;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
-    font-family: 'Inter', sans-serif; 
 }
 
 /* Header row styling */
 .table__header {
-    background-color: #837583; 
+    background-color: #cf8fb4; 
     padding: 0.75vw;
     padding-left: 1vw;
     border: none; 
@@ -225,7 +227,8 @@
 
 /* Apply background and rounded corners to each table cell */
 .table__cell {
-    background-color: #978897; 
+    background-color: #cf8fb4; 
+    color: #ffffff;
     padding: 0.5vw; 
     border: none; 
 }
@@ -260,7 +263,7 @@
 
 /* Style for lyrics specifically */
 .song {
-    background-image: url('https://wallpapercave.com/wp/wp7952844.jpg');
+    background-color: #020202;
     background-size: cover;
     background-position: center;
     min-height: 100vh; 
@@ -283,6 +286,7 @@
     height: 5vw; /* Changed to viewport width */
     object-fit: cover; 
     border-radius: 10px; 
+    border: 2px solid white; /* Added white border */
 }
 
 /* Song details (title and singer) */
@@ -296,7 +300,7 @@
     font-size: 2vw; /* Changed to viewport width */
     font-family: 'Inter', sans-serif; 
     font-weight: 900;
-    color: #551470; 
+    color: #B18FCF; 
     margin: 0;
 }
 
@@ -313,6 +317,7 @@
 
 .song__genre {
     display: inline-block;
+    color: #020202;
     margin-left: 0;
     background-color: #f0f0f0; /* Example styling */
     padding: 3px 8px;
@@ -331,7 +336,7 @@
 .lyrics {
     padding: 0%; /* Adjusted to percentage */
     padding-top: 1vw;
-    color: #551470; /* Color for translation */
+    color: #ffffff; /* Color for translation */
     font-size: 1vw; /* Changed to viewport width */
     font-family: 'Inter', sans-serif; /* Inter font */
     text-align: justify; /* Justify the text */
@@ -406,11 +411,11 @@
 
 /* Footer Styles */
 .footer {
-    background-color: #333;
+    background: linear-gradient(to right, #FF69B4, #B18FCF); /* Pink to violet gradient */;
     color: white;
-    padding: 0.5vw 0; /* 20px -> 2vw */
+    padding: 0vw 0; /* 20px -> 2vw */
     text-align: center;
-    font-family: 'Inter', sans-serif; /* Inter font */
+    font-family: 'Poppins', sans-serif; /* Inter font */
   }
   
   .footer__container {
@@ -432,13 +437,23 @@
   }
   
   .footer__heading--brand {
-    font-family: 'Kalnia', sans-serif;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: bold;
     font-size: 1.5vw; /* 28px -> 2.8vw */
+    text-align: left;
+    padding-left: 8vw;
+    padding-bottom: 0vw;
+    margin-bottom: 0;
   }
   
   .footer__text {
     font-size: 0.75vw; /* 14px -> 1.4vw */
-    margin-top: 1vw; /* 10px -> 1vw */
+    margin-top: 0vw; /* 10px -> 1vw */
+    margin-bottom: 0;
+    color: white;
+    text-align: left;
+    padding-left: 8vw;
   }
   
   .footer__nav,
@@ -446,19 +461,21 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 0.75vw; /* 14px -> 1.4vw */
   }
   
   .footer__nav-item,
   .footer__social-item {
     display: inline-block;
     margin: 0 1vw; /* 10px -> 1vw */
+    font-size: 0.75vw; /* 14px -> 1.4vw */
   }
   
   .footer__nav-link,
   .footer__social-link {
     color: white;
     text-decoration: none;
-    font-size: 1vw; /* 14px -> 1.4vw */
+    font-size: 0.75vw; /* 14px -> 1.4vw */
   }
   
   .footer__social-link img {
