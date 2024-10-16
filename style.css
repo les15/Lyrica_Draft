@@ -5,15 +5,13 @@
 }
 
 
-/* Header banner style */
 .header {
-    height: 10%; /* Adjusted height to a percentage */
-    background: linear-gradient(to right, #FF69B4, #B18FCF); /* Pink to violet gradient */
+    height: 10%; 
+    background: linear-gradient(to right, #FF69B4, #B18FCF); 
     position: relative;
     color: white;
 }
 
-/* Container for title and search bar */
 .header__title-search {
     display: flex;
     align-items: center;   
@@ -21,10 +19,9 @@
     position: relative;     
 }
 
-/* Center the title */
 .header__title-search h1 {
-    margin: 0 2%; /* Adjusted to percentage */
-    font-size: 3vw; /* Changed to viewport width */
+    margin: 0 2%; 
+    font-size: 3vw; 
     color: white; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     font-family: 'Poppins', sans-serif; 
@@ -32,103 +29,91 @@
     letter-spacing: 2px; 
 }
 
-/* Style for the search bar */
 .header__search-bar {
     position: absolute;  
-    right: 5%; /* Adjusted to percentage */
+    right: 5%; 
 }
 
 .header__search-bar input {
-    padding: 2%; /* Adjusted to percentage */
+    padding: 2%; 
     font-family: 'Poppins';
-    font-size: 0.80vw; /* Changed to viewport width */
+    font-size: 0.80vw; 
     border-radius: 10px; 
     border: 1px solid #ccc; 
 }
 
-/* Navbar spaced */
 .navbar {
-    height: 5%; /* Adjusted height to a percentage */
-    margin: 0.5% 0; /* Adjusted to percentage */
+    height: 5%; 
+    margin: 0.5% 0; 
     display: flex; 
     justify-content: center; 
     align-items: center;
-    gap: 5%; /* Adjusted to percentage */
+    gap: 5%; 
 }
 
-/* Styling for navbar links */
 .navbar__link {
     text-decoration: none; 
     color: #551470; 
-    padding: 0 2%; /* Adjusted to percentage */
-    font-size: 0.9vw; /* Changed to viewport width */
+    padding: 0 2%; 
+    font-size: 0.9vw; 
     font-family: 'Poppins', sans-serif;
-    line-height: 5%; /* Adjusted to percentage */
+    line-height: 5%; 
     transition: background-color 0.3s ease;
 }
 
-/* Remove any margin */
 .navbar__link {
     margin: 0; 
 }
 
-/* Hover effect */
 .navbar__link:hover {
     color: #978897; 
     background-color: transparent; 
 }
 
-/* Dropdown container */
 .navbar__dropdown {
     position: relative; 
 }
 
-/* Dropdown content */
 .navbar__dropdown--content {
     display: grid; 
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 1.5vw; /* Space between items */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5vw; 
     display: none; 
     position: absolute;
     min-width: 25vw; 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
     z-index: 1; 
     background: linear-gradient(to left, #FF69B4, #B18FCF);
-    padding: 1vw; /* Padding around the dropdown */
+    padding: 1vw; 
     border-radius: 0.5vw; 
 }
 
 .navbar__dropdown--content a {
-    color: #FFFFFF; /* White color for dropdown links */
+    color: #FFFFFF; 
 }
 
-/* Show dropdown on hover */
 .navbar__dropdown:hover .navbar__dropdown--content {
     display: grid; 
 }
 
-/* Style for dropdown links */
 .navbar__dropdown--link {
     color: white; 
-    padding: 15px; /* Increased padding for more space */
+    padding: 15px; 
     text-decoration: none; 
     display: block; 
-    text-align: center; /* Center the text */
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
-/* Change background color on hover */
 .navbar__dropdown-link:hover {
-    background-color: linear-gradient(to right, #FF69B4, #B18FCF); /* Semi-transparent white */
+    background-color: linear-gradient(to right, #FF69B4, #B18FCF); 
 }
 
-/* Adjusting the navbar links on hover */
 .navbar__link:hover {
     background-color: transparent; 
 }
 
-/* Content area styling */
 .content {
     background-color: #020202;;
     background-size: cover;
@@ -138,20 +123,19 @@
     color: white; 
     font-size: 2.5vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-    min-height: 100vh; /* Set minimum height to fill the viewport */
+    min-height: 100vh; 
     font-family: 'League Spartan', sans-serif; 
 }
 
 .content__link {
-    color: white; /* Change the color to match your theme */
-    text-decoration: none; /* Remove underline */
+    color: white; 
+    text-decoration: none; 
 }
 
 .content__link:hover {
-    text-decoration: underline; /* Add underline on hover for effect */
+    text-decoration: underline; 
 }
 
-/* Separator styling */
 .separator {
     width: 100%; 
     height: 0.1vw; 
@@ -161,7 +145,6 @@
     position: relative; 
 }
 
-/* Adding circles at both ends */
 .separator::before,
 .separator::after {
     content: '';
@@ -181,17 +164,15 @@
     right: -0.2vw; 
 }
 
-/* Table styling */
 .table__container {
     width: 100%; 
-    margin: 2vw auto; /* Center the table */
-    padding: 2vw; /* Space around the table */
+    margin: 2vw auto; 
+    padding: 2vw; 
     background-color: linear-gradient(to right, #FF69B4, #B18FCF); 
-    border-radius: 1vw; /* Rounded corners for the container */
+    border-radius: 1vw; 
     font-family: 'Poppins';
 }
 
-/* Table styling */
 .table {
     padding-top: 2vw;
     width: 100%; 
@@ -203,7 +184,6 @@
     font-size: 1.5vw;
 }
 
-/* Header row styling */
 .table__header {
     background-color: #cf8fb4; 
     padding: 0.75vw;
@@ -211,7 +191,6 @@
     border: none; 
 }
 
-/* Rounded corners for header cells */
 .table__header:first-child {
     border-radius: 1vw 0 0 1vw; 
 }
@@ -220,12 +199,10 @@
     border-radius: 0 1vw 1vw 0; 
 }
 
-/* Table row styling */
 .table__row {
     background-color: transparent; 
 }
 
-/* Apply background and rounded corners to each table cell */
 .table__cell {
     background-color: #cf8fb4; 
     color: #ffffff;
@@ -233,17 +210,14 @@
     border: none; 
 }
 
-/* Adjust padding for song title cells */
 .table__cell--song-title { 
     padding-left: 0px; 
 }
 
-/* Adjust padding for song artist cells */
 .table__cell--song-artist { 
     padding-right: 0px; 
 }
 
-/* Apply rounded corners to the first and last cells of each row */
 .table__row .table__cell:first-child {
     border-radius: 1vw 0 0 1vw; 
 }
@@ -259,9 +233,6 @@
     border-radius: 1vw; 
 }
 
-/***************************************************************************/
-
-/* Style for lyrics specifically */
 .song {
     background-color: #020202;
     background-size: cover;
@@ -271,25 +242,22 @@
     padding: 0;
 }
 
-/* Song container */
 .song__container {
     display: flex;
     align-items: center; 
-    gap: 2%; /* Adjusted to percentage */
-    padding-top: 5%; /* Adjusted to percentage */
-    padding-left: 10%; /* Adjusted to percentage */
+    gap: 2%; 
+    padding-top: 5%; 
+    padding-left: 10%; 
 }
 
-/* Thumbnail size */
 .song__thumbnail {
-    width: 5vw; /* Changed to viewport width */
-    height: 5vw; /* Changed to viewport width */
+    width: 5vw; 
+    height: 5vw; 
     object-fit: cover; 
     border-radius: 10px; 
-    border: 2px solid white; /* Added white border */
+    border: 2px solid white; 
 }
 
-/* Song details (title and singer) */
 .song__details {
     display: flex;
     flex-direction: column;
@@ -297,7 +265,7 @@
 
 .song__details .song__title {
     padding-top: 2vw;
-    font-size: 2vw; /* Changed to viewport width */
+    font-size: 2vw; 
     font-family: 'Inter', sans-serif; 
     font-weight: 900;
     color: #B18FCF; 
@@ -305,142 +273,135 @@
 }
 
 .song__details .song__singer {
-    font-size: 1vw; /* Changed to viewport width */
+    font-size: 1vw; 
     font-family: 'Inter', sans-serif; 
     font-weight: 400; 
     color: #ffffff; 
 }
 
 .song__genres {
-    margin-top: 0.5vw; /* Adds some space between the singer's name and the genres */
+    margin-top: 0.5vw; 
 }
 
 .song__genre {
     display: inline-block;
     color: #020202;
     margin-left: 0;
-    background-color: #f0f0f0; /* Example styling */
+    background-color: #f0f0f0; 
     padding: 3px 8px;
     border-radius: 1vw;
-    font-size: 0.75vw; /* Changed to viewport width */
+    font-size: 0.75vw; 
     font-family: 'Inter', sans-serif; 
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none; 
 
 }
 
 .song__genre:hover {
-    background-color: #ddd; /* Change background color on hover */
+    background-color: #ddd; 
 }
 
-/* Lyrics area styling */
 .lyrics {
-    padding: 0%; /* Adjusted to percentage */
+    padding: 0%; 
     padding-top: 1vw;
-    color: #ffffff; /* Color for translation */
-    font-size: 1vw; /* Changed to viewport width */
-    font-family: 'Inter', sans-serif; /* Inter font */
-    text-align: justify; /* Justify the text */
+    color: #ffffff; 
+    font-size: 1vw; 
+    font-family: 'Inter', sans-serif; 
+    text-align: justify; 
     white-space: pre-wrap;
-    padding-left: 12.3%; /* Adjusted to percentage */
+    padding-left: 12.3%; 
 }
 
 .video__container {
-    position: fixed; /* Keep fixed position */
-    top: 300px; /* Fixed top position */
-    left: 75%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    width: 100%; /* Full width */
-    max-width: 600px; /* Limit to a max width */
-    overflow: hidden; /* Hide overflow */
-    z-index: 100; /* Ensure it's on top of other content */
-    border: 5px solid white; /* White border */
-    border-radius: 15px; /* Rounded corners */
-    padding: 5px; /* Optional: space between border and iframe */
-    background-color: rgba(255, 255, 255, 0.5); /* Optional: background color for better visibility */
+    position: fixed; 
+    top: 300px; 
+    left: 75%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    max-width: 600px; 
+    overflow: hidden; 
+    z-index: 100; 
+    border: 5px solid white; 
+    border-radius: 15px; 
+    padding: 5px; 
+    background-color: rgba(255, 255, 255, 0.5); 
 }
 
-/* Iframe styling */
 .video__container iframe {
-    width: 100%; /* Full width */
-    height: auto; /* Automatic height */
-    aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
-    border: none; /* Remove default border */
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 16 / 9; 
+    border: none; 
 }
 
 @media (max-width: 768px) {
     .video__container {
-        top: 150px; /* Adjust top position for smaller screens */
-        max-width: 50%; /* Allow more width on smaller screens */
+        top: 150px; 
+        max-width: 50%; 
     }
 }
 
 @media (max-width: 480px) {
     .video__container {
-        top: 150px; /* Further adjust top position for very small screens */
-        max-width: 50%; /* Full width on very small screens */
+        top: 150px; 
+        max-width: 50%; 
     }
 }
 
 .songlist {
-    list-style: none; /* Remove default bullet points */
-    font-family: 'Inter', sans-serif; /* Inter font */
+    list-style: none; 
+    font-family: 'Inter', sans-serif; 
     font-size: 2vw;
 
 }
 
-/* Element styles for each list item */
 .songlist__item {
-    margin: 10px 0; /* Add vertical spacing between items */
+    margin: 10px 0; 
 }
 
-/* Element styles for the anchor links */
 .songlist__link {
-    text-decoration: none; /* Remove underline from links */
-    color: #ffffff; /* Dark text color */
-    padding: 10px; /* Add padding for clickable area */
-    display: block; /* Make the link fill the entire list item */
-    border-radius: 4px; /* Rounded corners for the link */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    text-decoration: none; 
+    color: #ffffff; 
+    padding: 10px; 
+    display: block; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
 }
 
-/* Modifier styles for link hover state */
 .songlist__link:hover {
-    background-color: #e2e2e2; /* Change to a lighter gray on hover */
+    background-color: #e2e2e2; 
 }
 
-
-/* Footer Styles */
 .footer {
-    background: linear-gradient(to right, #FF69B4, #B18FCF); /* Pink to violet gradient */;
+    background: linear-gradient(to right, #FF69B4, #B18FCF); ;
     color: white;
-    padding: 0vw 0; /* 20px -> 2vw */
+    padding: 0vw 0; 
     text-align: center;
-    font-family: 'Poppins', sans-serif; /* Inter font */
+    font-family: 'Poppins', sans-serif; 
   }
   
   .footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100vw; /* Adjusted to fit viewport width */
+    max-width: 100vw; 
     margin: 0 auto;
   }
   
   .footer__section {
     flex: 1;
-    padding: 1vw; /* 10px -> 1vw */
+    padding: 1vw; 
   }
   
   .footer__heading {
-    font-size: 1vw; /* 24px -> 2.4vw */
-    margin-bottom: 1vw; /* 10px -> 1vw */
+    font-size: 1vw; 
+    margin-bottom: 1vw; 
   }
   
   .footer__heading--brand {
     font-family: 'Poppins';
     color: white;
     font-weight: bold;
-    font-size: 1.5vw; /* 28px -> 2.8vw */
+    font-size: 1.5vw; 
     text-align: left;
     padding-left: 8vw;
     padding-bottom: 0vw;
@@ -448,8 +409,8 @@
   }
   
   .footer__text {
-    font-size: 0.75vw; /* 14px -> 1.4vw */
-    margin-top: 0vw; /* 10px -> 1vw */
+    font-size: 0.75vw; 
+    margin-top: 0vw; 
     margin-bottom: 0;
     color: white;
     text-align: left;
@@ -461,26 +422,26 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 0.75vw; /* 14px -> 1.4vw */
+    font-size: 0.75vw; 
   }
   
   .footer__nav-item,
   .footer__social-item {
     display: inline-block;
-    margin: 0 1vw; /* 10px -> 1vw */
-    font-size: 0.75vw; /* 14px -> 1.4vw */
+    margin: 0 1vw; 
+    font-size: 0.75vw; 
   }
   
   .footer__nav-link,
   .footer__social-link {
     color: white;
     text-decoration: none;
-    font-size: 0.75vw; /* 14px -> 1.4vw */
+    font-size: 0.75vw; 
   }
   
   .footer__social-link img {
-    width: 1.5vw; /* 24px -> 2.4vw */
-    height: 1.5vw; /* 24px -> 2.4vw */
+    width: 1.5vw; 
+    height: 1.5vw; 
     vertical-align: middle;
   }
   
