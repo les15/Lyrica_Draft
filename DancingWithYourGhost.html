@@ -15,6 +15,10 @@
 
 </head>
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
     <div class="container">
         <!-- Header Section -->
         <div class="header">
@@ -66,10 +70,13 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/emm0uGDGg2o?si=AL0njMu3jW6VCYUB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
             </div>
             <div class="lyrics">
+                <p id="lyricsText">
                 Yellin' at the sky, screamin' at the world<br>
                 Baby, why'd you go away, I'm still your girl?<br>
                 Holdin' on too tight, head up in the clouds<br>
                 Heaven only knows where you are now<br><br>
+                </p>
+                <p class="hidden-lyrics">
                 How do I love?<br>
                 How do I love again?<br>
                 How do I trust?<br>
@@ -101,9 +108,13 @@
                 I put the record on, wait 'til I hear our song<br>
                 Every night I'm dancing with your ghost<br>
                 Every night I'm dancing with your ghost<br><br>
-                Every night I'm dancing with your ghost<br>      
+                Every night I'm dancing with your ghost<br>
+                </p>
+                <button id="showMoreBtn" onclick="toggleLyrics()">Show More</button>
             </div>
     </div>
+    <button onclick="backToTop()" id="backToTopBtn">Back to Top</button>
+
     <script src="script.js"></script> <!-- Linking to external JavaScript file for future reference -->
 </body>
 <footer class="footer">
