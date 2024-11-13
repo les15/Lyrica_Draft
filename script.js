@@ -38,16 +38,15 @@ function toggleLyrics() {
     const showMoreBtn = document.getElementById('showMoreBtn');
     
     if (hiddenLyrics.classList.contains('showing')) {
-        // If already showing, hide it
+        // "Show Less"
         hiddenLyrics.classList.remove('showing');
         showMoreBtn.textContent = 'Show More';
         hiddenLyrics.style.maxHeight = '0'; // Collapse
     } else {
-        // If not showing, reveal it
+        // "Show More"
         hiddenLyrics.classList.add('showing');
         showMoreBtn.textContent = 'Show Less';
 
-        // Set maxHeight dynamically
         hiddenLyrics.style.maxHeight = hiddenLyrics.scrollHeight + 'px'; // Expand to its full height
     }
 }
@@ -64,3 +63,45 @@ function updateProgressBar() {
     progressBar.style.width = scrollPercentage + "%";
 }
 
+// Handle click on Contact link in footer
+document.getElementById("contactLink").addEventListener("click", function(event) {
+    event.preventDefault();
+    
+    // Fetch and insert the modal HTML into the page (if it's not already loaded)
+    fetch("contactModal.html")
+        .then(response => response.text())
+        .then(data => {
+            // Insert the modal into the page (if not already inserted)
+            if (!document.getElementById("contactModal")) {
+                document.getElementById("modal-container").innerHTML = data;
+            }
+            
+            // Show the modal using Bootstrap
+            var modal = new bootstrap.Modal(document.getElementById('contactModal'));
+            modal.show();
+
+            // Add event listener to the "Submit" button
+            document.querySelector("#contactModal .btn-primary").addEventListener("click", function() {
+                // Reset the form
+                document.querySelector("#contactModal form").reset();
+                
+                // Optional: Hide the modal after submission
+                modal.hide();
+            });
+        });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const feedbackForm = document.getElementById('feedbackForm');
+    const modal = new bootstrap.Modal(document.getElementById('feedbackModal'));
+
+    feedbackForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        modal.show();
+        
+        feedbackForm.reset();
+    });
+});

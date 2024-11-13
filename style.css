@@ -4,6 +4,11 @@
     box-sizing: border-box; 
 }
 
+p {
+    font-family: 'Poppins', sans-serif;
+        line-height: 1; 
+    
+}
 
 .header {
     height: 10%; 
@@ -44,7 +49,6 @@
 
 .navbar {
     height: 5%; 
-    margin: 0.5% 0; 
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -168,12 +172,12 @@
     width: 100%; 
     margin: 2vw auto; 
     padding: 2vw; 
-    background-color: linear-gradient(to right, #FF69B4, #B18FCF); 
+    background: linear-gradient(to right, #FF69B4, #B18FCF); 
     border-radius: 1vw; 
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
-.table {
+.table.table-custom {
     padding-top: 2vw;
     width: 100%; 
     border-collapse: separate; 
@@ -182,6 +186,8 @@
     background-color: transparent; 
     color: white; 
     font-size: 1.5vw;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .table__header {
@@ -207,8 +213,10 @@
     background-color: #cf8fb4; 
     color: #ffffff;
     padding: 0.5vw; 
-    border: none; 
+    border: none;
+    vertical-align: middle;
 }
+
 
 .table__cell--song-title { 
     padding-left: 0px; 
@@ -232,6 +240,7 @@
     object-fit: cover; 
     border-radius: 1vw; 
 }
+
 
 .song {
     background-color: #020202;
@@ -489,33 +498,100 @@
 }
 
 .hidden-lyrics {
-    max-height: 0; /* Start hidden */
-    overflow: hidden; /* Hide overflow */
-    transition: max-height 0.5s ease, padding 0.5s ease; /* Add transition */
-    padding: 0 0; /* Start with no padding */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 0;
 }
 
 .showing {
-    max-height: 1000px; /* Large value to accommodate most text, can be adjusted */
-    padding: 10px 0; /* Add some padding when showing */
+    max-height: 1000px;
+    padding: 10px 0;
 }
 
-/* Progress bar container */
 .progress-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 5px; /* Adjust height as needed */
+    height: 5px; 
     background-color: #f3f3f3;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1000; 
 }
 
-/* Progress bar fill */
 .progress-bar {
     height: 100%;
     width: 0;
-    background-color: #551470; /* Color for the progress bar */
-    transition: width 0.1s ease; /* Smooth width transition */
+    background-color: #551470;
+    transition: width 0.1s ease;
 }
 
+.content__info {
+    margin-bottom: 100px; 
+}
+
+.feedback-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.feedback-form__form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form__fieldset {
+    border: none;
+    padding: 0;
+}
+
+.feedback-form__legend {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.feedback-form__label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.feedback-form__input,
+.feedback-form__select,
+.feedback-form__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.feedback-form__input:focus,
+.feedback-form__select:focus,
+.feedback-form__textarea:focus {
+    border-color: #007BFF;
+}
+
+.feedback-form__button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form__button:hover {
+    background-color: #0056b3;
+}
