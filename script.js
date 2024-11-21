@@ -63,33 +63,66 @@ function updateProgressBar() {
     progressBar.style.width = scrollPercentage + "%";
 }
 
-// Handle click on Contact link in footer
-document.getElementById("contactLink").addEventListener("click", function(event) {
+document.getElementById("contactLink").addEventListener("click", function (event) {
     event.preventDefault();
-    
+
     // Fetch and insert the modal HTML into the page (if it's not already loaded)
     fetch("contactModal.html")
-        .then(response => response.text())
-        .then(data => {
+        .then((response) => response.text())
+        .then((data) => {
             // Insert the modal into the page (if not already inserted)
             if (!document.getElementById("contactModal")) {
                 document.getElementById("modal-container").innerHTML = data;
             }
-            
-            // Show the modal using Bootstrap
-            var modal = new bootstrap.Modal(document.getElementById('contactModal'));
+
+
+            var modalElement = document.getElementById("contactModal");
+            var modal = new bootstrap.Modal(modalElement);
             modal.show();
 
+            const form = document.getElementById("contactForm");
+            const confirmationMessage = document.getElementById("confirmationMessage");
+            const confirmDismissButton = document.getElementById("confirmDismiss");
+
             // Add event listener to the "Submit" button
-            document.querySelector("#contactModal .btn-primary").addEventListener("click", function() {
-                // Reset the form
-                document.querySelector("#contactModal form").reset();
-                
-                // Optional: Hide the modal after submission
-                modal.hide();
+            document.querySelector("#contactModal .btn-primary").addEventListener("click", function () {
+
+                if (!form.checkValidity()) {
+
+                    form.reportValidity();
+                    return;
+                }
+
+                // Show confirmation message
+                confirmationMessage.classList.remove("d-none");
+
+                // Disable the Submit button
+                this.setAttribute("disabled", "true");
+
+
+                form.reset();
+
+                // Add click event listener to confirmation "OK" button
+                confirmDismissButton.addEventListener("click", function () {
+
+                    modal.hide();
+
+                    // Reset modal state for future use
+                    confirmationMessage.classList.add("d-none");
+                    document.querySelector("#contactModal .btn-primary").removeAttribute("disabled");
+                });
+            });
+
+            // Reset the form and states when the modal is dismissed
+            modalElement.addEventListener("hidden.bs.modal", function () {
+
+                form.reset();
+                confirmationMessage.classList.add("d-none");
+                document.querySelector("#contactModal .btn-primary").removeAttribute("disabled");
             });
         });
 });
+
 
 
 
@@ -104,4 +137,59 @@ document.addEventListener('DOMContentLoaded', function () {
         
         feedbackForm.reset();
     });
+});
+
+document.getElementById("searchInput").addEventListener("input", function() {
+    const query = this.value.toLowerCase();
+    const results = songs.filter(song => song.title.toLowerCase().includes(query) || song.artist.toLowerCase().includes(query));
+    displayResults(results);
+});
+
+
+// Search Function
+const songs = [
+    { title: "Neko (Cat)", artist: "DISH//", link: "neko.html" },
+    { title: "Dancing With Your Ghost", artist: "Sasha Alex Sloan", link: "DancingWithYourGhost.html" },
+    { title: "Vandalize", artist: "One OK Rock", link: "vandalize.html" },
+    { title: "Out of Love", artist: "Alessia Cara", link: "OutofLove.html" },
+    { title: "Speak the Name/Call the Name", artist: "Indiana Bible College", link: "SpeaktheName.html" }
+];
+
+document.getElementById("searchInput").addEventListener("input", function () {
+    const query = this.value.toLowerCase().trim(); // Get the user's input
+    const resultsContainer = document.getElementById("liveSearchResults");
+    resultsContainer.innerHTML = ''; // Clear previous results
+
+    if (!query) {
+        resultsContainer.style.display = 'none'; // Hide the popup if the query is empty
+        return;
+    }
+
+    const results = songs.filter(song =>
+        song.title.toLowerCase().includes(query) || song.artist.toLowerCase().includes(query)
+    );
+
+    if (results.length > 0) {
+        const ul = document.createElement('ul');
+        results.forEach(song => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${song.link}">${song.title}</a> by ${song.artist}`;
+            ul.appendChild(li);
+        });
+        resultsContainer.appendChild(ul);
+        resultsContainer.style.display = 'block'; // Show the popup
+    } else {
+        resultsContainer.innerHTML = "<p>No results found.</p>";
+        resultsContainer.style.display = 'block'; // Show the popup with "no results" message
+    }
+});
+
+// Hide results when clicking outside
+document.addEventListener("click", function (event) {
+    const resultsContainer = document.getElementById("liveSearchResults");
+    const searchInput = document.getElementById("searchInput");
+
+    if (!searchInput.contains(event.target) && !resultsContainer.contains(event.target)) {
+        resultsContainer.style.display = 'none';
+    }
 });

@@ -64,15 +64,18 @@
                         </li>
                     </ul>
 
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form id="searchForm" class="d-flex">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                    <div id="liveSearchResults" class="live-search-results"></div>          
                 </div>
             </div>
         </nav>
 
         <div class="content">
+            <h1>Feedback</h1>
+            <div class="separator"></div>
             <main class="feedback-form">
                 <form id="feedbackForm" class="feedback-form__form">
                     <fieldset class="feedback-form__fieldset">
@@ -86,7 +89,7 @@
                         <input type="email" id="email" name="email" placeholder="Email" class="feedback-form__input"
                             required>
 
-                        <label for="feedbackType" class="feedback-form__label">Feedback</label>
+                        <label for="feedbackType" class="feedback-form__label">Feedback Type</label>
                         <select id="feedbackType" name="feedbackType" class="feedback-form__select" required>
                             <option value="general">General</option>
                             <option value="bug">Bug Report</option>
